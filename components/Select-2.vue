@@ -1,20 +1,6 @@
-<script setup>
-import { ref } from 'vue';
-
-const componentToggle = ref(false);
-</script>
 <template>
   <div>
-    <h1 class="text-4xl mb-8">Test</h1>
-
-    <NuxtLink
-      to="/"
-      class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none mb-8"
-      title="test"
-      rel="home"
-      >To home page</NuxtLink
-    >
-
+    <h2 class="text-4xl">Component - Select 2</h2>
     <!-- Select -->
     <select
       data-hs-select='{
@@ -35,17 +21,5 @@ const componentToggle = ref(false);
       <option>User ID</option>
     </select>
     <!-- End Select -->
-
-    <hr />
-
-    <button
-      @click="componentToggle = !componentToggle"
-      class="mt-8 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none mb-8"
-    >
-      Toggle components by v-if
-    </button>
-
-    <Select1 v-if="componentToggle" />
-    <Select2 v-if="!componentToggle" />
   </div>
 </template>
