@@ -1,3 +1,13 @@
+<script>
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  if (process.client) {
+    window.HSStaticMethods.autoInit();
+  }
+});
+</script>
+
 <template>
   <div>
     <h2 class="text-4xl">Component - Select 1</h2>
