@@ -18,7 +18,7 @@ const componentToggle = ref(false);
     <!-- Select -->
     <select
       data-hs-select='{
-      "placeholder": "Select option...",
+      "placeholder": "Test options",
       "toggleTag": "<button type=\"button\"></button>",
       "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 px-4 pe-9 flex text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:border-blue-500 focus:ring-blue-500 before:absolute before:inset-0 before:z-[1] dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400",
       "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-gray-700 dark:[&::-webkit-scrollbar-thumb]:bg-gray-500 dark:bg-slate-900 dark:border-gray-700",
@@ -29,10 +29,10 @@ const componentToggle = ref(false);
       class="hidden"
     >
       <option value="">Choose</option>
-      <option>Name</option>
-      <option>Email address</option>
-      <option>Description</option>
-      <option>User ID</option>
+      <option>Test 1</option>
+      <option>Test 2</option>
+      <option>Test 3</option>
+      <option>Test 4</option>
     </select>
     <!-- End Select -->
 
