@@ -2,9 +2,7 @@
 import { onMounted } from 'vue';
 
 onMounted(() => {
-  if (process.client) {
-    window.HSStaticMethods.autoInit();
-  }
+  window.HSStaticMethods.autoInit();
 });
 </script>
 
